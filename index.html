@@ -1,87 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Akash M | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Scroll Animation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Scroll Animation Canvas -->
-    <div class="animation-container">
-        <canvas id="hero-canvas"></canvas>
-    </div>
+  <!-- Scroll container (creates scroll space) -->
+  <div class="scroll-container">
+    <canvas id="animationCanvas"></canvas>
+  </div>
 
-    <!-- Resume Content -->
-    <section class="content">
-
-        <div class="card">
-            <h1>Akash M</h1>
-            <h3>Aspiring Software Developer</h3>
-            <p>
-                Aspiring software developer with strong interest in coding, algorithms, and 
-                application development. Familiar with Python programming, logical reasoning, 
-                and basic software concepts. Passionate about continuous learning.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Contact</h2>
-            <p>📍 Mudivaithanendal, Tamil Nadu – 628102</p>
-            <p>📞 9952172708</p>
-            <p>✉️ akash2006m123@gmail.com</p>
-        </div>
-
-        <div class="card">
-            <h2>Education</h2>
-            <p><strong>B.E. Electronics and Communication Engineering</strong></p>
-            <p>Government College of Engineering – Tirunelveli</p>
-            <p>Expected: July 2027</p>
-        </div>
-
-        <div class="card">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python Programming</li>
-                <li>C, C++, Java</li>
-                <li>Logical Reasoning</li>
-                <li>Project Planning & Execution</li>
-                <li>Solution-Oriented Approach</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Project</h2>
-            <h3>Smart Agriculture System</h3>
-            <p>
-                Project to protect agriculture fields from heavy rain during harvesting 
-                season and maintain constant water levels. Successfully implemented 
-                during 12th standard.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Certifications</h2>
-            <ul>
-                <li>C, C++, Java, Python</li>
-                <li>Typewriting Higher Level (English & Tamil)</li>
-                <li>Hindi Pandit</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <!-- Chat Widget -->
-    <div class="chat-widget">
-        <div class="chat-header">Resume Assistant</div>
-        <div class="chat-body" id="chat-body"></div>
-        <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Ask about my resume...">
-            <button onclick="sendMessage()">Send</button>
-        </div>
-    </div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
