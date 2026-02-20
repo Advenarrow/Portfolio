@@ -1,270 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akash M | Portfolio</title>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', sans-serif;
-        scroll-behavior: smooth;
-    }
-
-    body {
-        background: #ffffff;
-        color: #111;
-        overflow-x: hidden;
-    }
-
-    /* ===== Scroll Animation Canvas ===== */
-    #scrollCanvas {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        opacity: 0.08; /* Watermark effect */
-        pointer-events: none;
-    }
-
-    /* ===== Content Wrapper ===== */
-    .container {
-        width: 90%;
-        max-width: 1100px;
-        margin: auto;
-        padding: 80px 0;
-    }
-
-    section {
-        margin-bottom: 100px;
-    }
-
-    h1 {
-        font-size: 42px;
-        font-weight: 700;
-        margin-bottom: 10px;
-    }
-
-    h2 {
-        font-size: 26px;
-        margin-bottom: 20px;
-        border-left: 4px solid #111;
-        padding-left: 10px;
-    }
-
-    p {
-        font-size: 16px;
-        line-height: 1.7;
-        margin-bottom: 15px;
-    }
-
-    ul {
-        margin-left: 20px;
-        line-height: 1.8;
-    }
-
-    .card {
-        background: rgba(255,255,255,0.85);
-        backdrop-filter: blur(6px);
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 8px 30px rgba(0,0,0,0.05);
-        margin-bottom: 20px;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-
-    a {
-        text-decoration: none;
-        color: #0a66c2;
-        font-weight: 500;
-    }
-
-    .footer {
-        text-align: center;
-        padding: 40px 0;
-        font-size: 14px;
-        color: #666;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Akash M | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Scroll Animation Canvas -->
-<canvas id="scrollCanvas"></canvas>
+    <!-- Scroll Animation Background -->
+    <canvas id="scrollCanvas"></canvas>
 
-<div class="container">
+    <!-- Main Content -->
+    <div class="container">
 
-    <!-- Hero Section -->
-    <section>
-        <h1>Akash M</h1>
-        <p><strong>Aspiring Software Developer | ECE Student</strong></p>
-        <p>
-            Mudivaithanendal, Tamil Nadu – 628102 <br>
-            📞 9952172708 <br>
-            ✉ akash2006m123@gmail.com
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/akash-m-4b6b0a27a" target="_blank">LinkedIn</a> |
-            <a href="https://www.instagram.com/_always_akash" target="_blank">Instagram</a>
-        </p>
-    </section>
+        <section class="hero">
+            <h1>Akash M</h1>
+            <p class="tagline">Aspiring Software Developer | ECE Student</p>
+            <div class="contact">
+                <p>Mudivaithanendal, Tamil Nadu – 628102</p>
+                <p>📞 9952172708</p>
+                <p>✉ akash2006m123@gmail.com</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/akash-m-4b6b0a27a" target="_blank">LinkedIn</a> |
+                    <a href="https://www.instagram.com/_always_akash" target="_blank">Instagram</a>
+                </p>
+            </div>
+        </section>
 
-    <!-- About -->
-    <section>
-        <h2>Profile</h2>
-        <div class="card">
-            <p>
-                Aspiring software developer with a strong interest in coding, algorithms,
-                and application development. Familiar with Python programming,
-                logical reasoning, and basic software concepts.
-            </p>
-            <p>
-                Passionate about continuous learning and seeking internship
-                opportunities to gain hands-on industry exposure.
-                Experienced in building software projects focused on
-                logic development and real-world problem solving.
-            </p>
-        </div>
-    </section>
-
-    <!-- Education -->
-    <section>
-        <h2>Education</h2>
-        <div class="card">
-            <h3>B.E. – Electronics and Communication Engineering</h3>
-            <p>Government College of Engineering – Tirunelveli</p>
-            <p>Expected Graduation: July 2027</p>
-        </div>
-
-        <div class="card">
-            <h3>Higher Secondary – Maths Computer Science</h3>
-            <p>KVSM Matriculation Higher Secondary School – Thoothukudi</p>
-            <p>Completed: May 2023</p>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section>
-        <h2>Skills</h2>
-        <div class="grid">
+        <section>
+            <h2>Profile</h2>
             <div class="card">
-                <ul>
-                    <li>Team Collaboration</li>
-                    <li>Project Planning & Execution</li>
-                    <li>Solution-Oriented Approach</li>
-                </ul>
+                <p>
+                    Aspiring software developer with strong interest in coding,
+                    algorithms and application development. Familiar with Python,
+                    logical reasoning and core programming fundamentals.
+                </p>
+                <p>
+                    Passionate about continuous learning and seeking internship
+                    opportunities to gain real-world industry exposure.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="card">
+                <h3>B.E. – Electronics and Communication Engineering</h3>
+                <p>Government College of Engineering – Tirunelveli</p>
+                <p>Expected Graduation: July 2027</p>
             </div>
 
             <div class="card">
+                <h3>Higher Secondary – Maths Computer Science</h3>
+                <p>KVSM Matriculation Higher Secondary School – Thoothukudi</p>
+                <p>Completed: May 2023</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <ul>
+                        <li>Team Collaboration</li>
+                        <li>Project Planning</li>
+                        <li>Solution-Oriented Approach</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project</h2>
+            <div class="card">
+                <h3>Smart Agriculture System</h3>
+                <p>
+                    Developed a system to protect agricultural fields from heavy rain
+                    during harvesting season and maintain constant water levels.
+                </p>
+                <p>
+                    Successfully implemented during 12th standard focusing on
+                    real-world practical problem solving.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="card">
                 <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>Python</li>
+                    <li>C, C++, Java, Python – COGTIS Technologies</li>
+                    <li>Typewriting Higher Level – English & Tamil</li>
+                    <li>Hindi Pandit</li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Project -->
-    <section>
-        <h2>Project</h2>
-        <div class="card">
-            <h3>Smart Agriculture System</h3>
-            <p>
-                Developed a system to protect agricultural fields from heavy rain
-                during harvesting season and maintain constant water levels.
-            </p>
-            <p>
-                Successfully implemented during 12th standard, focusing on
-                real-time monitoring and practical problem-solving.
-            </p>
-        </div>
-    </section>
+        <section>
+            <h2>Languages</h2>
+            <div class="card">
+                <ul>
+                    <li>Tamil – Native</li>
+                    <li>English – Advanced</li>
+                    <li>Hindi – Intermediate</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Certifications -->
-    <section>
-        <h2>Certifications</h2>
-        <div class="card">
-            <ul>
-                <li>C, C++, Java, Python – COGTIS Technologies</li>
-                <li>Typewriting Higher Level – English & Tamil</li>
-                <li>Hindi Pandit</li>
-            </ul>
-        </div>
-    </section>
+    </div>
 
-    <!-- Languages -->
-    <section>
-        <h2>Languages</h2>
-        <div class="card">
-            <ul>
-                <li>Tamil – Native</li>
-                <li>English – Advanced</li>
-                <li>Hindi – Intermediate</li>
-            </ul>
-        </div>
-    </section>
+    <footer>
+        © 2026 Akash M | Portfolio
+    </footer>
 
-</div>
-
-<div class="footer">
-    © 2026 Akash M | Portfolio Website
-</div>
-
-<script>
-const frameCount = 240;
-const canvas = document.getElementById("scrollCanvas");
-const context = canvas.getContext("2d");
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const currentFrame = index => `frames/ezgif-frame-${String(index + 1).padStart(3, '0')}.jpg`;
-
-const images = [];
-const img = new Image();
-
-for (let i = 0; i < frameCount; i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-    images.push(img);
-}
-
-const render = index => {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(images[index], 0, 0, canvas.width, canvas.height);
-};
-
-window.addEventListener('scroll', () => {
-    const scrollTop = document.documentElement.scrollTop;
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const frameIndex = Math.min(
-        frameCount - 1,
-        Math.floor((scrollTop / maxScroll) * frameCount)
-    );
-    render(frameIndex);
-});
-
-images[0].onload = () => {
-    render(0);
-};
-
-window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
